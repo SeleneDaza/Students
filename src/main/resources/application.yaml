@@ -1,6 +1,14 @@
 spring:
   application:
     name: actividadDos
+  datasource:
+    url: jdbc:postgresql://db:5432/estudiantes_db
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 data:
   dir: /mnt/persistencia
@@ -11,14 +19,3 @@ app:
 
 service:
   id: Servidor 1
-
-spring:
-  datasource:
-    url: jdbc:postgresql://db:5432/estudiantes_db
-    username: user
-    password: password
-    driver-class-name: org.postgresql.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: none
