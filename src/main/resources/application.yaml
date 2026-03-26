@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: actividadDos
+
+data:
+  dir: /mnt/persistencia
+  file: students.dat
+
+app:
+  id: Programa 2
+
+service:
+  id: Servidor 1
+
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/estudiantes_db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
