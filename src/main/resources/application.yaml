@@ -18,4 +18,4 @@ app:
   id: Programa 2
 
 service:
-  id: ${SERVICE_ID:Servidor 1}
+  id: ${HOSTNAME:Servidor 1}
